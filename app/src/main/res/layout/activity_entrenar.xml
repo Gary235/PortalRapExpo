@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.EntrenarActivity"
+    android:background="#fff">
+
+
+    <ImageView
+        android:id="@+id/recdifuminado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AB000000"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="50dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtConfirmar"
+        android:textColor="#fff"
+        android:textSize="45dp"
+        android:text="EMPEZAR"
+        android:fontFamily="@font/poppins"
+        android:elevation="60dp"
+
+        android:onClick="EmpezarEntrenamiento"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/recfondo"
+        app:layout_constraintBottom_toBottomOf="@id/recfondo"
+        />
+
+    <ImageView
+        android:id="@+id/recfondo"
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+
+        android:src="@drawable/violeta_redondeado"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/btn_transparente"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/TiempoFreedeentrenar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:elevation="40dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:lineSpacingExtra="0sp"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@id/btnVOlverdeentrenar"
+        app:layout_constraintRight_toRightOf="@id/recfondo"
+        app:layout_constraintTop_toTopOf="@id/btnVOlverdeentrenar" />
+
+    <TextView
+        android:id="@+id/nombreBaseSeleccionadadeentrenar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="#1E1E1E"
+        android:textSize="23dp"
+        android:fontFamily="@font/montserrat_semibold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recfondo" />
+
+    <TextView
+        android:id="@+id/nombreArtistaSeleccionadodeentrenar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="#1E1E1E"
+        android:textSize="13dp"
+        app:layout_constraintLeft_toLeftOf="@id/nombreBaseSeleccionadadeentrenar"
+        app:layout_constraintTop_toBottomOf="@id/nombreBaseSeleccionadadeentrenar"
+
+        />
+
+    <SeekBar
+        android:id="@+id/Barradeentrenar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:thumbTint="#7D6FA8"
+        android:progressTint="#7D6FA8"
+        app:layout_constraintTop_toBottomOf="@+id/nombreArtistaSeleccionadodeentrenar" />
+
+
+    <ImageButton
+        android:id="@+id/Playdeentrenar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_icono_play"
+        android:background="@drawable/btn_transparente"
+        android:onClick="pausayReproducir"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Barradeentrenar"
+        />
+
+
+    <ImageButton
+        android:id="@+id/btnGrabardeentrenar"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/stroke_negro_redondeado"
+        android:src="@drawable/ic_grabar"
+
+        android:onClick="Grabar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Playdeentrenar" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/parlante1"
+
+        app:lottie_rawRes="@raw/parlante"
+        app:layout_constraintBottom_toBottomOf="@id/btnGrabardeentrenar"
+        app:layout_constraintTop_toTopOf="@id/btnGrabardeentrenar"
+        app:layout_constraintRight_toLeftOf="@id/btnGrabardeentrenar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/parlante2"
+
+        app:lottie_rawRes="@raw/parlante"
+        app:layout_constraintBottom_toBottomOf="@id/btnGrabardeentrenar"
+        app:layout_constraintTop_toTopOf="@id/btnGrabardeentrenar"
+        app:layout_constraintLeft_toRightOf="@id/btnGrabardeentrenar"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnVOlverdeentrenar"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/recfondo"
+        app:layout_constraintRight_toLeftOf="@id/recfondo"
+        android:layout_marginTop="20dp"
+
+        android:onClick="Salir"
+        android:src="@drawable/ic_cruz"
+        android:background="@drawable/btn_transparente"
+        />
+
+
+    <Button
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnLevantarBottom"
+
+        android:fontFamily="sans-serif-medium"
+        android:text="0"
+        android:textColor="#fff"
+        android:onClick="LevantarBottomSheet"
+        android:paddingStart="30dp"
+        android:drawableStart="@drawable/ic_grabacion"
+        android:background="@drawable/bordeizquierdo_redondeado"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

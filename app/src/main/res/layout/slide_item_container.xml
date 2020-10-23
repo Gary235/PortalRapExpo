@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imageSlide"
+        app:riv_corner_radius="15dp"
+        android:adjustViewBounds="true"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:src="@drawable/imagen1"
+         />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Play"
+
+        app:layout_constraintTop_toTopOf="@id/imageSlide"
+        app:layout_constraintBottom_toBottomOf="@id/imageSlide"
+        app:layout_constraintLeft_toLeftOf="@id/imageSlide"
+        app:layout_constraintRight_toRightOf="@id/imageSlide"
+
+        android:src="@drawable/ic_icono_play_blanco"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/audioAnimacion"
+
+        app:layout_constraintTop_toTopOf="@id/imageSlide"
+        app:layout_constraintBottom_toBottomOf="@id/imageSlide"
+        app:layout_constraintLeft_toLeftOf="@id/imageSlide"
+        app:layout_constraintRight_toRightOf="@id/imageSlide"
+
+        app:lottie_rawRes="@raw/audio"
+        android:visibility="gone"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombreBase"
+
+        android:textColor="#fff"
+        android:text="Pumpkin Spice"
+        android:textSize="18dp"
+        android:fontFamily="@font/montserrat_semibold"
+
+        app:layout_constraintBottom_toBottomOf="@id/imageSlide"
+        app:layout_constraintLeft_toLeftOf="@id/imageSlide"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombreArtista"
+
+        android:textColor="#B8B8B8"
+        android:text="audiobinger"
+        android:textSize="13dp"
+        android:fontFamily="@font/montserrat_regular"
+
+        app:layout_constraintTop_toBottomOf="@id/nombreBase"
+        app:layout_constraintLeft_toLeftOf="@id/nombreBase"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/duracion"
+
+        android:textColor="#B8B8B8"
+        android:text="2:31"
+        android:textSize="13dp"
+        android:fontFamily="@font/montserrat_regular"
+
+        app:layout_constraintTop_toBottomOf="@id/nombreBase"
+        app:layout_constraintRight_toRightOf="@id/imageSlide"
+        android:layout_marginRight="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

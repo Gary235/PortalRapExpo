@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titulo"
+        android:text="Bienvenido a Portal Rap"
+        android:textSize="25dp"
+        android:fontFamily="@font/poppins"
+        android:textColor="#1E1E1E"
+
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="#3A3A3A"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Ya puedes empezar a entrenar"
+
+        android:layout_marginLeft="2dp"
+        app:layout_constraintLeft_toLeftOf="@id/titulo"
+        app:layout_constraintTop_toBottomOf="@id/titulo" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+
+        android:scaleType="centerCrop"
+        app:lottie_rawRes="@raw/cabezaa"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/boton"
+
+        android:textAllCaps="false"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="#fff"
+        android:text="Entrenar"
+        android:onClick="PasarABeat"
+        android:background="@drawable/violeta_redondeado"
+        android:textSize="18dp"
+
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="110dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

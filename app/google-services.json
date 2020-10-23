@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "991550332110",
+    "firebase_url": "https://portal-rap-4b1fe.firebaseio.com",
+    "project_id": "portal-rap-4b1fe",
+    "storage_bucket": "portal-rap-4b1fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991550332110:android:d9281dd97a61d5185a849f",
+        "android_client_info": {
+          "package_name": "com.example.portalrapexpo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991550332110-6n1g0kbjq4s39jh0kqgtt7qphtcnt2bb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCExw_p6o0TKfgz54GZrujftoDOy-XK_WM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991550332110-6n1g0kbjq4s39jh0kqgtt7qphtcnt2bb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
